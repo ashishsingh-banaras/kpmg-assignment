@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_DBServer_name": {
+            "value": null
+        },
+        "virtualMachines_appserver1_name": {
+            "value": null
+        },
+        "virtualMachines_webserver2_name": {
+            "value": null
+        },
+        "virtualNetworks_azure_3tier_name": {
+            "value": null
+        },
+        "networkSecurityGroups_dbserver_name": {
+            "value": null
+        },
+        "networkInterfaces_webserver2308_name": {
+            "value": null
+        },
+        "networkSecurityGroups_appserver_name": {
+            "value": null
+        },
+        "networkSecurityGroups_webserver_name": {
+            "value": null
+        },
+        "publicIPAddresses_webserverlb_ip_name": {
+            "value": null
+        },
+        "storageAccounts_azure3tierstoragenew_name": {
+            "value": null
+        },
+        "publicIPAddresses_webserver_public_ip_name": {
+            "value": null
+        },
+        "networkInterfaces_DBServerNetworkInterface_name": {
+            "value": null
+        },
+        "networkInterfaces_appserver1NetworkInterface_name": {
+            "value": null
+        },
+        "loadBalancers_appserver_lb_internal_externalid": {
+            "value": null
+        },
+        "loadBalancers_webserverlb_external_externalid": {
+            "value": null
+        }
+    }
+}

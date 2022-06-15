@@ -1,0 +1,31 @@
+﻿
+function Get-Matadata {
+    param(
+        [string] $metadata
+    )
+
+
+    try {
+
+        if( $metadata.Length -gt 0) {
+
+        $URL = "http://169.254.169.254/metadata/instance/" + $metadata +  "?api-version=2021-02-01"
+        
+        }
+        else {
+            $URL = "http://169.254.169.254/metadata/instance?api-version=2021-02-01"
+        }
+
+
+        Invoke-RestMethod -Headers @{"Metadata"="true"} -Method GET -Uri $URL | ConvertTo-Json -Depth 64
+
+    }
+    catch
+    {
+        $errorMsg = "Metadata key: " + $Error[0]
+        
+        Write-Warning $errorMsg
+    }
+}
+
+Get-Matadata "network"
